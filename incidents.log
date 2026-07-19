@@ -1,0 +1,15 @@
+2026-07-18 20:22:19,748 [INFO] Métricas ANTES del incidente: {'recall': 0.9444, 'roc_auc': 0.8259, 'f1': 0.68, 'especificidad': 0.55, 'latencia_ms': 4.53}
+2026-07-18 20:22:19,760 [WARNING] Métricas DURANTE incidente: {'recall': 0.9259, 'roc_auc': 0.6728, 'f1': 0.5405, 'especificidad': 0.19, 'latencia_ms': 3.86}
+2026-07-18 20:22:19,763 [ERROR] SLO VIOLATION: Recall 0.9259 < 0.8 o AUC 0.6728 < 0.75
+2026-07-18 20:22:19,766 [INFO] ==================================================
+2026-07-18 20:22:19,766 [INFO] RUNBOOK-001: Iniciando reentrenamiento del modelo
+2026-07-18 20:22:19,766 [INFO] ==================================================
+2026-07-18 20:22:20,132 [INFO] Reentrenamiento exitoso: {'recall': 0.9444, 'roc_auc': 0.8259, 'f1': 0.68, 'especificidad': 0.55}
+2026-07-18 20:22:20,132 [INFO] RUNBOOK-001 completado a las 2026-07-18T20:22:20.132578
+2026-07-18 20:22:20,132 [INFO] Métricas post-reentrenamiento: {'recall': 0.9444, 'roc_auc': 0.8259, 'f1': 0.68, 'especificidad': 0.55}
+2026-07-18 20:22:20,523 [WARNING] Simulando alta latencia en el servicio...
+2026-07-18 20:22:21,143 [ERROR] SLO VIOLATION: Latencia 606.89ms > 500ms
+2026-07-18 20:22:21,146 [INFO] ==================================================
+2026-07-18 20:22:21,146 [INFO] RUNBOOK-002: Iniciando escalamiento del servicio
+2026-07-18 20:22:21,146 [INFO] ==================================================
+2026-07-18 20:22:21,951 [INFO] RUNBOOK-002 completado. Latencia recuperada: 85.3ms

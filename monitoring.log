@@ -1,0 +1,11 @@
+2026-07-18 20:20:47,290 [INFO] Iniciando run de monitoreo: baseline_normal
+2026-07-18 20:20:49,882 [ERROR] SLO VIOLATIONS detectadas: ['ESPECIFICIDAD 0.55 < SLO 0.7']
+2026-07-18 20:20:49,882 [ERROR]   ⚠️  ESPECIFICIDAD 0.55 < SLO 0.7
+2026-07-18 20:21:01,662 [INFO] Iniciando run de monitoreo: modelo_degradado
+2026-07-18 20:21:02,018 [WARNING] Simulando degradación del modelo — añadiendo ruido a los datos de prueba
+2026-07-18 20:21:02,045 [ERROR] SLO VIOLATIONS detectadas: ['ESPECIFICIDAD 0.34 < SLO 0.7', 'AUC 0.6391 < SLO 0.75']
+2026-07-18 20:21:02,045 [ERROR]   ⚠️  ESPECIFICIDAD 0.34 < SLO 0.7
+2026-07-18 20:21:02,045 [ERROR]   ⚠️  AUC 0.6391 < SLO 0.75
+2026-07-18 20:21:05,742 [INFO] Iniciando run de monitoreo: umbral_estandar_050
+2026-07-18 20:21:06,147 [ERROR] SLO VIOLATIONS detectadas: ['RECALL 0.7037 < SLO 0.8']
+2026-07-18 20:21:06,147 [ERROR]   ⚠️  RECALL 0.7037 < SLO 0.8
